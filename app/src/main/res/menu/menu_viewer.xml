@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.plainolnotes.EditorActivity">
+
+    <item
+        android:id="@+id/action_settings_textsize"
+        android:title="Change Text Size"
+        android:orderInCategory="100"
+        android:icon="@drawable/pref_icon"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings_textcolor"
+        android:title="Change Text Color"
+        android:orderInCategory="101"
+        android:icon="@android:drawable/ic_media_play"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings_fontchange"
+        android:title="Change Font"
+        android:orderInCategory="102"
+        android:icon="@android:drawable/ic_menu_manage"
+        app:showAsAction="never" />
+
+
+
+</menu>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_preferences_font_type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sq.mynotesbag.preferences_fontType"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Choose A Font Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvChooseFont"
+            android:gravity="center"
+            android:textSize="24sp" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/rgFontType"
+            android:layout_margin="20dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amatic"
+                android:id="@+id/rb1"
+                android:textSize="20sp"
+                android:typeface="monospace"
+                android:checked="true"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="black jack"
+                android:id="@+id/rb2"
+                android:typeface="monospace"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DancingScript"
+                android:id="@+id/rb3"
+                android:textSize="20sp"
+                android:typeface="monospace"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QuickSand"
+                android:id="@+id/rb4"
+                android:textSize="20sp"
+                android:typeface="monospace"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="school"
+                android:id="@+id/rb5"
+                android:textSize="20sp"
+                android:typeface="monospace"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sensation"
+                android:id="@+id/rb6"
+                android:textSize="20sp"
+                android:typeface="monospace"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <RadioButton
+                android:id="@+id/rb7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text="SweetlyBroken"
+                android:textSize="20sp"
+                android:typeface="monospace" />
+        </RadioGroup>
+
+        <Button
+            android:text="Save Settings"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bSaveFont" />
+    </LinearLayout>
+
+</LinearLayout>

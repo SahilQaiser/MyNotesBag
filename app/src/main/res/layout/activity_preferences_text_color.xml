@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_preferences_text_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sq.mynotesbag.preferences_textColor"
+    android:orientation="vertical"
+    android:background="#DADADA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rootBack"
+            android:background="#2ca8ae"
+            android:layout_weight="1"
+            android:weightSum="5">
+
+            <TextView
+                android:text="Background Color"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:id="@+id/tvBackColor"
+                android:gravity="center"
+                android:textSize="26sp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="4" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/rgBack">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="White"
+                    android:textSize="20sp"
+                    android:id="@+id/rbbWhite"
+                    android:typeface="monospace"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Purple"
+                    android:textSize="20sp"
+                    android:id="@+id/rbbPurple"
+                    android:typeface="monospace"
+                    android:textColor="#8a2be2" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Olive"
+                    android:textSize="20sp"
+                    android:id="@+id/rbbOlive"
+                    android:typeface="monospace"
+                    android:textColor="#d3ffce"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blue"
+                    android:textSize="20sp"
+                    android:id="@+id/rbbBlue"
+                    android:typeface="monospace"
+                    android:textColor="#0000ff" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gray"
+                    android:id="@+id/rbbGray"
+                    android:textSize="20sp"
+                    android:typeface="monospace"
+                    android:textColor="#999999" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indigo"
+                    android:textSize="20sp"
+                    android:id="@+id/rbbIndigo"
+                    android:typeface="monospace"
+                    android:textColor="#3F51B5"
+                    android:checked="true" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rootText"
+            android:background="#2ca8ae"
+            android:layout_weight="1"
+            android:weightSum="5">
+
+            <TextView
+                android:text="Text Color"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="center"
+                android:id="@+id/tvTextColor"
+                android:textSize="26sp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="4" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/rgText">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Black"
+                    android:id="@+id/rbtBlack"
+                    android:textSize="20sp"
+                    android:typeface="monospace"
+                    android:textColor="#000000"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Purple"
+                    android:id="@+id/rbtPurple"
+                    android:typeface="monospace"
+                    android:textSize="20sp"
+                    android:textColor="#8a2be2" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Green"
+                    android:id="@+id/rbtGreen"
+                    android:textSize="20sp"
+                    android:typeface="monospace"
+                    android:textColor="#008000" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blue"
+                    android:id="@+id/rbtBlue"
+                    android:textSize="20sp"
+                    android:typeface="monospace"
+                    android:textColor="#0000ff" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gray"
+                    android:id="@+id/rbtGray"
+                    android:textSize="20sp"
+                    android:typeface="monospace"
+                    android:textColor="#999999" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Steel"
+                    android:id="@+id/rbtSteel"
+                    android:textSize="20sp"
+                    android:typeface="monospace"
+                    android:textColor="#C5CAE9" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2ca8ae"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:id="@+id/color_check"
+            android:background="#FDAFDA"
+            android:layout_weight="1.2">
+
+            <TextView
+                android:text="Sample Text For Color Checking..."
+                android:layout_width="match_parent"
+                android:gravity="center|center_vertical"
+                android:textSize="30sp"
+                android:layout_height="match_parent"
+                android:id="@+id/textColorCheck"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:text="Save Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bSaveColor"
+            android:layout_gravity="center"
+            android:layout_weight="3.8" />
+    </LinearLayout>
+
+</LinearLayout>
